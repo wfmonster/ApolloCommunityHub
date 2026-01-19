@@ -139,4 +139,4 @@ This project is shared freely for community use. Adapt it for your own community
 
 ---
 
-*"We carry the fire"* 🔥
+*"Where the light gathers"* ✨
