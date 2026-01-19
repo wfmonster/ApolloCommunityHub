@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides | Apollo Community Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars stars-2"></div>
+    
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-ring">
+                <div class="logo-inner">
+                    <span class="logo-icon">◉</span>
+                </div>
+            </div>
+            <div class="logo-text">
+                <h1>Apollo</h1>
+                <span class="tagline">Community Hub</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html" class="nav-link">
+            <span class="nav-icon">⌂</span>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="resources.html" class="nav-link">
+            <span class="nav-icon">◈</span>
+            <span class="nav-text">Resources</span>
+        </a>
+        <a href="events.html" class="nav-link">
+            <span class="nav-icon">◐</span>
+            <span class="nav-text">Events</span>
+        </a>
+        <a href="guides.html" class="nav-link active">
+            <span class="nav-icon">⚙</span>
+            <span class="nav-text">Guides</span>
+        </a>
+        <a href="about.html" class="nav-link">
+            <span class="nav-icon">☉</span>
+            <span class="nav-text">About</span>
+        </a>
+    </nav>
+
+    <main class="content">
+        <div class="page-header">
+            <h1>⚙ Practical Guides</h1>
+            <p>Step-by-step instructions for self-reliance and community resilience</p>
+        </div>
+
+        <!-- Solar Guide -->
+        <section id="solar" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">☀️</span>
+                <h2>Solar Power Basics</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Understanding and maintaining our community solar system.</p>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>System Overview</h4>
+                        <p>Our solar system consists of panels (collect energy), charge controller (regulates flow), battery bank (stores energy), and inverter (converts to AC power). Power flows: Sun → Panels → Controller → Batteries → Inverter → Outlets.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Reading the Monitor</h4>
+                        <p>The battery monitor shows: Voltage (should be 48-54V for our system), State of Charge % (keep above 50% for battery health), and Current (positive = charging, negative = discharging).</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Daily Checks</h4>
+                        <p>Check battery voltage in morning (should recover to 52V+ after night). Look for error lights on inverter/controller. Note any unusual sounds (humming is normal, clicking or buzzing is not).</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Panel Maintenance</h4>
+                        <p>Clean panels monthly with soft cloth and water (no soap). Check for cracks or damage. Trim any vegetation casting shadows. Best cleaning time: early morning when panels are cool.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Conserving Power</h4>
+                        <p>Use high-draw appliances (power tools, pumps) during peak sun hours (10am-2pm). Turn off lights and devices when not in use. Charge devices during the day. Limit evening usage to essentials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Radio Communication -->
+        <section id="radio" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">📡</span>
+                <h2>Radio Communication</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">How to use our communication systems effectively.</p>
+                
+                <h3 style="color: var(--apollo-gold); font-family: var(--font-display); margin: 1.5rem 0 1rem; font-size: 0.9rem;">MESHTASTIC BASICS</h3>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>What is Meshtastic?</h4>
+                        <p>Long-range, low-power mesh network for text messaging. No internet or cell towers needed. Messages hop between nodes to extend range. Works with small LoRa radio devices.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Connecting Your Device</h4>
+                        <p>Power on your Meshtastic node. Open the Meshtastic app on your phone. Enable Bluetooth. Select your device from the list. Set your name in settings.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Sending Messages</h4>
+                        <p>Use the primary channel for general community messages. Keep messages short (under 200 characters). For private messages, select a specific user. Check for new messages regularly.</p>
+                    </div>
+                </div>
+                
+                <h3 style="color: var(--apollo-gold); font-family: var(--font-display); margin: 1.5rem 0 1rem; font-size: 0.9rem;">HAM RADIO PROTOCOL</h3>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>License Required</h4>
+                        <p>You must have a valid amateur radio license to transmit. Listening is allowed without a license. Contact our ham operators to learn more about getting licensed.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Daily Check-In</h4>
+                        <p>Check-ins at 0800 and 2000 on the local repeater. Give your callsign, location, and status (all okay, or any needs). Listen for community announcements. Report any emergencies.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Emergency Protocol</h4>
+                        <p>For emergencies, break into the repeater with "BREAK BREAK EMERGENCY." State your callsign, nature of emergency, and location. Repeat if needed. Stand by for response.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Water Purification -->
+        <section id="water-purify" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">💧</span>
+                <h2>Water Purification</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Methods to ensure safe drinking water.</p>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Boiling (Most Reliable)</h4>
+                        <p>Bring water to a rolling boil for at least 1 minute (3 minutes at higher elevations). Let cool before drinking. Kills bacteria, viruses, and parasites. Doesn't remove chemicals.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Ceramic Filters</h4>
+                        <p>Community filters located at Water Purification Station. Pour water through slowly. Clean filter weekly by scrubbing outer surface. Replace when flow becomes too slow.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>UV Purification</h4>
+                        <p>Use the UV wand in clear water only (pre-filter murky water). Stir wand for 60-90 seconds. Treats 1 liter at a time. Batteries or solar charged.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Emergency Tablets</h4>
+                        <p>Iodine or chlorine dioxide tablets available at First Aid Station. Follow package instructions carefully. Wait required time before drinking. Some have aftertaste.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>SODIS (Solar Disinfection)</h4>
+                        <p>Fill clear plastic bottles with water. Lay flat in direct sunlight for 6+ hours (or 2 days if cloudy). UV from sun kills pathogens. Free and requires no equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic First Aid -->
+        <section id="first-aid" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">🏥</span>
+                <h2>Basic First Aid</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Essential first aid for common injuries. Always seek help from community medics for serious injuries.</p>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Cuts and Scrapes</h4>
+                        <p>Clean wound with clean water. Apply pressure to stop bleeding. Apply antiseptic if available. Cover with clean bandage. Change bandage daily. Watch for signs of infection (redness, swelling, pus).</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Burns</h4>
+                        <p>Cool with cool (not cold) running water for 10-20 minutes. Do not apply ice, butter, or oil. Cover loosely with clean cloth. For serious burns, seek medical help immediately.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Heat Exhaustion</h4>
+                        <p>Move to shade/cool area. Remove excess clothing. Apply cool wet cloths. Drink water with salt if conscious. Rest. If symptoms worsen or confusion occurs, get medical help.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Sprains</h4>
+                        <p>Remember RICE: Rest (stop using injury), Ice (20 min on, 20 off), Compression (wrap with bandage), Elevation (raise above heart). Seek help if you can't bear weight.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>When to Get Help</h4>
+                        <p>Seek community medics for: deep wounds, burns larger than palm, broken bones, chest pain, difficulty breathing, severe allergic reactions, head injuries, or any serious concern.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Preservation -->
+        <section id="preservation" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">🥫</span>
+                <h2>Food Preservation</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Methods to store food without refrigeration.</p>
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Drying/Dehydrating</h4>
+                        <p>Slice food thin and uniform. Use solar dehydrator or low oven. Fruits: until leathery. Vegetables: until brittle. Store in airtight containers in cool, dark place. Rehydrate by soaking in water.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Fermentation</h4>
+                        <p>Use salt to create brine (2-3 tablespoons per quart water). Submerge vegetables completely. Cover but allow gas to escape. Keep at room temperature 1-4 weeks. Store in cool place after fermenting.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Water Bath Canning</h4>
+                        <p>For high-acid foods (fruits, pickles, tomatoes with added acid). Sterilize jars. Fill with hot food, leaving headspace. Process in boiling water bath for specified time. Check seals after cooling.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Root Cellaring</h4>
+                        <p>Store root vegetables (potatoes, carrots, beets) in cool (32-40°F), humid, dark space. Layer in sand or sawdust. Check regularly for spoilage. Remove any rotten items immediately.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Salt Curing</h4>
+                        <p>Pack meat or fish in salt, covering completely. Store in cool place. Rinse and soak before eating to reduce saltiness. Traditionally used for fish, ham, and bacon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Protocols -->
+        <section id="emergency" class="card section-anchor">
+            <div class="card-header">
+                <span class="card-icon">🚨</span>
+                <h2>Emergency Protocols</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">What to do in emergency situations.</p>
+                
+                <div class="guide-step">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Fire Emergency</h4>
+                        <p>Alert others immediately. Evacuate the area. Meet at Central Plaza rally point. Account for all community members. Fire team responds with equipment from Workshop Building. Do not re-enter buildings.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Medical Emergency</h4>
+                        <p>Call for help via radio or Meshtastic. Begin first aid if trained. Do not move injured person unless in immediate danger. Send someone to meet medics and guide them. Stay calm.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Severe Weather</h4>
+                        <p>Monitor radio for updates. Secure loose items outside. Gather in designated shelter areas. Bring emergency supplies: water, flashlight, first aid. Wait for all-clear signal before resuming activities.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Power System Failure</h4>
+                        <p>Check main breaker first. Notify site coordinator. Reduce non-essential power use. Backup generator for critical needs only. Follow load-shedding schedule if enacted.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">!</div>
+                    <div class="step-content">
+                        <h4>Rally Points</h4>
+                        <p>Primary: Central Plaza. Secondary: East Field garden entrance. Tertiary: South boundary well. Know all three locations. Check in when you arrive at rally point.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Guides Coming -->
+        <section class="card">
+            <div class="card-header">
+                <span class="card-icon">📝</span>
+                <h2>Contribute a Guide</h2>
+            </div>
+            <div class="card-content">
+                <p style="color: var(--text-secondary);">Have knowledge to share? We're always looking for guides on: composting, seed saving, herbal remedies, bicycle repair, sewing and mending, soap making, natural building, and more.</p>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">Contact the Site Coordinator to add your guide to this collection.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-motto">"We carry the fire"</p>
+            <p class="footer-info">Apollo Community Hub • Local Network Only</p>
+            <p class="footer-update">Last Updated: January 2026</p>
+        </div>
+        <div class="footer-decoration">
+            <span>◉</span>
+        </div>
+    </footer>
+</body>
+</html>
