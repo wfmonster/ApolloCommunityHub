@@ -402,12 +402,18 @@ body {
     font-size: 1.2rem;
 }
 
-.contact-phone {
+.contact-phone,
+.contact-address {
     width: 100%;
     text-align: right;
     font-family: var(--font-display);
     color: var(--retro-teal);
     margin-top: var(--space-xs);
+}
+
+.contact-address {
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 /* ---------- Schedule Card ---------- */
